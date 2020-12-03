@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.Ventana_principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tw_userView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloUsuario"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tx_user"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_marginBottom="30dp"
+            />
+        <TextView
+            android:id="@+id/tw_passView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloPass"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/tx_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_marginBottom="30dp"
+            />
+
+        <Button
+            android:id="@+id/bt_comprobarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="@string/bt_acceder" />
+    </LinearLayout>
+</FrameLayout>

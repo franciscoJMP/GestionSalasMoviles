@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/ventana_principal">
+
+    <fragment
+        android:id="@+id/nav_expo"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ExposicionesFragment"
+        android:label="@string/menu_home">
+        <action
+            android:id="@+id/action_nav_expo_to_modificarExposicionFragment"
+            app:destination="@id/modificarExposicionFragment" />
+        <action
+            android:id="@+id/action_nav_expo_to_crearExposicion"
+            app:destination="@id/crearExposicion" />
+        <action
+            android:id="@+id/action_nav_expo_to_nav_artistas"
+            app:destination="@id/nav_artistas" />
+        <action
+            android:id="@+id/action_nav_expo_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ventana_principal"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.Ventana_principal"
+        android:label="@string/ventanaPrincipal"
+        tools:layout="@layout/fragment_ventana_principal" >
+        <action
+            android:id="@+id/action_ventana_principal_to_nav_expo"
+            app:destination="@id/nav_expo" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearExposicion"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.CrearExposicion"
+        android:label="@string/bt_crearExpo"
+        tools:layout="@layout/fragment_crear_exposicion">
+        <action
+            android:id="@+id/action_crearExposicion_to_nav_expo"
+            app:destination="@id/nav_expo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_artistas"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ArtistasFragment"
+        android:label="@string/artistas"
+        tools:layout="@layout/fragment_artistas">
+        <action
+            android:id="@+id/action_nav_artistas_to_crearArtista"
+            app:destination="@id/crearArtista" />
+        <action
+            android:id="@+id/action_nav_artistas_to_modificarArtistaFragment"
+            app:destination="@id/modificarArtistaFragment" />
+        <action
+            android:id="@+id/action_nav_artistas_to_participarFragment"
+            app:destination="@id/participarFragment" />
+        <action
+            android:id="@+id/action_nav_artistas_to_nav_trabajos"
+            app:destination="@id/nav_trabajos" />
+        <action
+            android:id="@+id/action_nav_artistas_to_nav_expo"
+            app:destination="@id/nav_expo" />
+        <action
+            android:id="@+id/action_nav_artistas_to_fragmentEmail"
+            app:destination="@id/fragmentEmail" />
+        <action
+            android:id="@+id/action_nav_artistas_to_llamarFragment"
+            app:destination="@id/llamarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_trabajos"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.TrabajosFragment"
+        android:label="@string/trabajos"
+        tools:layout="@layout/fragment_trabajos">
+        <action
+            android:id="@+id/action_nav_trabajos_to_nav_artistas2"
+            app:destination="@id/nav_artistas" />
+        <action
+            android:id="@+id/action_nav_trabajos_to_crearTrabajosFragment"
+            app:destination="@id/crearTrabajosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificarExposicionFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ModificarExposicionFragment"
+        android:label="@string/modificarExpo"
+        tools:layout="@layout/fragment_modificar_exposicion">
+        <action
+            android:id="@+id/action_modificarExposicionFragment_to_nav_expo"
+            app:destination="@id/nav_expo" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearArtista"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.CrearArtista"
+        android:label="@string/bt_crearArt"
+        tools:layout="@layout/fragment_crear_artista">
+        <action
+            android:id="@+id/action_crearArtista_to_nav_artistas"
+            app:destination="@id/nav_artistas" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificarArtistaFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ModificarArtistaFragment"
+        android:label="@string/modificarArt"
+        tools:layout="@layout/fragment_modificar_artista">
+        <action
+            android:id="@+id/action_modificarArtistaFragment_to_nav_artistas"
+            app:destination="@id/nav_artistas" />
+    </fragment>
+    <fragment
+        android:id="@+id/participarFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ParticiparFragment"
+        android:label="@string/participarExpo"
+        tools:layout="@layout/fragment_participar">
+        <action
+            android:id="@+id/action_participarFragment_to_nav_artistas"
+            app:destination="@id/nav_artistas" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearTrabajosFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.CrearTrabajosFragment"
+        android:label="@string/crearTrabajo"
+        tools:layout="@layout/fragment_crear_trabajos">
+        <action
+            android:id="@+id/action_crearTrabajosFragment_to_nav_trabajos"
+            app:destination="@id/nav_trabajos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEmail"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.FragmentEmail"
+        android:label="@string/contactarEmail"
+        tools:layout="@layout/fragment_email">
+        <action
+            android:id="@+id/action_fragmentEmail_to_nav_artistas"
+            app:destination="@id/nav_artistas" />
+    </fragment>
+    <fragment
+        android:id="@+id/comentariosFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ComentariosFragment"
+        android:label="@string/comentarios"
+        tools:layout="@layout/fragment_comentarios">
+        <action
+            android:id="@+id/action_comentariosFragment_to_crearComentariosFragment"
+            app:destination="@id/crearComentariosFragment" />
+        <action
+            android:id="@+id/action_comentariosFragment_to_modificarComentarios"
+            app:destination="@id/modificarComentarios" />
+    </fragment>
+    <fragment
+        android:id="@+id/crearComentariosFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.CrearComentariosFragment"
+        android:label="@string/crearComentarios"
+        tools:layout="@layout/fragment_crear_comentarios">
+        <action
+            android:id="@+id/action_crearComentariosFragment_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/llamarFragment"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.LlamarFragment"
+        android:label="@string/llamar"
+        tools:layout="@layout/fragment_llamar">
+        <action
+            android:id="@+id/action_llamarFragment_to_nav_artistas"
+            app:destination="@id/nav_artistas" />
+    </fragment>
+    <fragment
+        android:id="@+id/modificarComentarios"
+        android:name="com.example.aplicacionfinalmovilesgestionsalas.Vistas.ModificarComentarios"
+        android:label="@string/modificarcomentarios"
+        tools:layout="@layout/fragment_modificar_comentarios">
+        <action
+            android:id="@+id/action_modificarComentarios_to_comentariosFragment"
+            app:destination="@id/comentariosFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Gestion de salas</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Preferencias</string>
+
+    <string name="menu_home">Exposiciones</string>
+    <string name="menu_gallery">Artistas</string>
+    <string name="menu_slideshow">Trabajos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="tituloUsuario">Usuario:</string>
+    <string name="tituloPass">Contraseña:</string>
+    <string name="bt_acceder">Acceder</string>
+    <string name="bt_volver">Volver</string>
+    <string name="bt_addExpo">Añadir Exposición</string>
+    <string name="bt_delExpo">Borrar exposición</string>
+    <string name="bt_modExpo">Modificar Exposición</string>
+    <string name="bt_addArt">Añadir Artista</string>
+    <string name="bt_delArt">Borrar Artista</string>
+    <string name="bt_modArt">Modificar Artista</string>
+    <string name="borrarExito">Borrado con exito</string>
+    <string name="borrarError">Error al borrar</string>
+    <string name="bt_cancelar">Cancelar</string>
+    <string name="bt_aceptar">Aceptar</string>
+    <string name="EliminarExpo">Eliminar Exposición</string>
+    <string name="confirmacionDelExpo">Esta seguro que quiere eliminar la exposicion </string>
+    <string name="bt_crearExpo">Crear Exposición</string>
+    <string name="bt_crearArt">Crear Artista</string>
+    <string name="artistas">Artistas</string>
+    <string name="exposiciones">Esposiciones</string>
+    <string name="trabajos">Trabajos</string>
+    <string name="verartistas">Ver artistas</string>
+    <string name="verComentarios">Ver comentarios</string>
+    <string name="participarExpo">Participiar Exposición</string>
+    <string name="contactarEmail">Contactar Email</string>
+    <string name="anadirArtista">Añadir Artistas</string>
+    <string name="dnipass">Dni Pasaporte Artista</string>
+    <string name="nombreArt">Nombre Artista:</string>
+    <string name="Direccion">Direccion</string>
+    <string name="poblacion">Población</string>
+    <string name="provincia">Provincia</string>
+    <string name="Pais">Pais</string>
+    <string name="moviltrabajo">Movil Trabajo</string>
+    <string name="movilpersonal">Movil Personal</string>
+    <string name="telefonofijo">Telefono Fijo</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="webblog">WebBlog</string>
+    <string name="fechanac">Fecha Nacimiento:</string>
+    <string name="exposicion">Exposicion</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="borrarComentarios">Borrar Comentarios</string>
+    <string name="modificarcomentarios">Modificar Comentarios</string>
+    <string name="nombreTrabajo">Nombre Trabajo</string>
+    <string name="crearComentarios">Crear comentarios: </string>
+    <string name="idExposicion">Id Exposicion: </string>
+    <string name="anadirComentario">Añadir Comentario</string>
+    <string name="anadirExposicion">Añadir una nueva Exposicion</string>
+    <string name="nombreExposicion">Nombre Exposición</string>
+    <string name="descExpo">Descripción Exposición: </string>
+    <string name="fecIn">Fecha Inicio: </string>
+    <string name="fecFin">Fecha Fin: </string>
+    <string name="crearTrabajo">Crear un Trabajo</string>
+    <string name="nombreTrab">Nombre Trabajo: </string>
+    <string name="desc">Descripción</string>
+    <string name="tamanio">Tamaño</string>
+    <string name="peso">Peso</string>
+    <string name="imagenGaleria">Imagen desde galeria</string>
+    <string name="imgCamara">Imagen desde camara</string>
+    <string name="nombreFichero">Nombre Fichero</string>
+    <string name="guardarImg">Guardar Imagen</string>
+    <string name="email" translatable="false">Email: </string>
+    <string name="contactArtista">Contactar con el Artista</string>
+    <string name="llamar">Llamar</string>
+    <string name="modificarArt">Modificar Artista</string>
+    <string name="modificarExpo">Modificar Exposición</string>
+    <string name="idExpo">Id Exposición:</string>
+    <string name="expoDisp">Exposiciones Disponibles</string>
+    <string name="anadirTrabajo">Añadir Trabajo</string>
+    <string name="felicitar">Felicitar</string>
+    <string name="contactoEmail">Contacto Email</string>
+    <string name="contacTelf">Contacto Telefono</string>
+    <string name="dnipasaporte">DNI Pasaporte</string>
+    <string name="finExpo">Fin Exposición</string>
+    <string name="inicExpo">Inicio Exposición</string>
+    <string name="descripcion">Descripción</string>
+    <string name="nombre">Nombre</string>
+    <string name="borrarTrabajo">Borrar Trabajo</string>
+    <string name="infoArt">Informacion Artista</string>
+    <string name="ventanaPrincipal">Ventana Principal</string>
+    <string name="incorrecto">Contraseña o usuario incorrecto</string>
+    <string name="noArtistas">No hay artistas a los que asignarle un trabajo. Añada algun artista</string>
+    <string name="rellenCampos">Rellene los Campos</string>
+    <string name="mensajeModExpo">Se modifico la exposición</string>
+    <string name="errorMod">Error al modificar</string>
+    <string name="comentMod">Comentario Modificado</string>
+    <string name="compruebeCampos">Compruebe que los campos no esten vacios, y que la fecha sea correcta</string>
+    <string name="artisMod">Artista modificado</string>
+    <string name="eligeClientEmail">Elija su cliente de correo</string>
+    <string name="guardeImagen">Guarde la imagen antes de crear el trabajo y compruebe que los campos no estan vacios</string>
+    <string name="erroCrearTrab">Error al crear el trabajo</string>
+    <string name="trabajoadd">Trabajo añadido</string>
+    <string name="nombreImagen">Debe introducir un nombre para la imagen y posteriormente guardarla"</string>
+    <string name="imagenNoCompatible">Imagen no compatible</string>
+    <string name="compruebeCampos2">Campos erroneos, revise los campos</string>
+    <string name="compruebeCampos3">Comprube que los campos sean correctos</string>
+    <string name="errorAddExpo">Error al crear la exposición</string>
+    <string name="exitoExpo">Exposicion creada con exito</string>
+    <string name="comentAdd">Comentario creado</string>
+    <string name="errComent">Error al crear el comentario</string>
+    <string name="errorsCampos">Error en los campos</string>
+    <string name="errArtist">Error al crear el artista</string>
+    <string name="artistAdd">Artista creado</string>
+    <string name="noartistas">Este trabajo no tiene artistas</string>
+    <string name="deltrab">Eliminar Trabajo</string>
+    <string name="delartis">Eliminar Artista</string>
+    <string name="delcoment">Eliminar comentario</string>
+    <string name="seguroTrab">Esta seguro que quiere eliminar el trabajo </string>
+    <string name="participicaionSave">Participación Guardada</string>
+    <string name="yaestaparticipando">Ya esta participando en esta exposición</string>
+    <string name="eliminarComentario">¿Quiere eliminar este comentario?</string>
+    <string name="seguroEliminarArtist">Esta seguro que quiere eliminar el artista </string>
+    <string name="felicitacion1">Felicitacion de cumpleaños </string>
+    <string name="felicitacion2">Espero que pases un feliz cumpleaños</string>
+    <string name="noescumple">No es su cumpleaños</string>
+    <string name="errorFelicitarArtis">Error al felicitar al artista</string>
+    <string name="mandaremail">Enviar Correo</string>
+    <string name="mensajeemail">Mensaje email</string>
+    <string name="cabecera">Cabecera email</string>
+    <string name="comentario">Comentario</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="FragmentBlanco">Hello blank fragment</string>
+
+
+</resources>

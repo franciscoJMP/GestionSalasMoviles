@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vistas.LlamarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/contactArtista"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/rg_llamar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movilpersonal" />
+
+            <RadioButton
+                android:id="@+id/rb_trabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/moviltrabajo" />
+
+            <RadioButton
+                android:id="@+id/rb_fijo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movilpersonal" />
+
+            <Button
+                android:id="@+id/bt_llamarArtista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/llamar" />
+        </RadioGroup>
+    </LinearLayout>
+</FrameLayout>

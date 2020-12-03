@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vistas.CrearTrabajosFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:text="@string/crearTrabajo"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"/>
+
+            <EditText
+                android:id="@+id/tx_addnombreTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nombreTrabajo"
+                android:inputType="textPersonName"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"/>
+
+            <EditText
+                android:id="@+id/tx_addDescripcionTrab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/desc"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_addTamanio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/tamanio"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_addPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/peso"
+                android:inputType="textPersonName" />
+
+
+            <Spinner
+                android:id="@+id/sp_artistas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_addImagenGalery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/imagenGaleria" />
+
+                <Button
+                    android:id="@+id/bt_addImagenCamara"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/imgCamara" />
+
+
+                <ImageView
+                    android:id="@+id/iv_imagenTrabajo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:scaleX="1"
+                    android:scaleY="1"
+
+                    android:src="@drawable/ic_launcher_background" />
+
+                <EditText
+                    android:id="@+id/tx_nombreFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:hint="@string/nombreFichero"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/bt_guardarFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/guardarImg" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/bt_crearTrab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="64dp"
+                    android:text="@string/crearTrabajo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_volverTrabAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginRight="36dp"
+                    android:text="@string/bt_volver"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

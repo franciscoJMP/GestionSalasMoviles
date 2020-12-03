@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Vistas.ModificarArtistaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/modificarArt"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"/>
+
+            <EditText
+                android:id="@+id/tx_moddniPasaporte"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:ems="10"
+                android:hint="@string/dnipass"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_modNombreArtista"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/nombreArt"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_modDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/Direccion"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_modPoblacion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/poblacion"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/tx_modProvincia"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/provincia"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/tx_modPais"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/Pais"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/tx_modMovilTrabajo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:maxLength="9"
+                android:hint="@string/moviltrabajo"
+                android:inputType="phone" />
+            <EditText
+                android:id="@+id/tx_modMovilPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:maxLength="9"
+                android:hint="@string/movilpersonal"
+                android:inputType="phone" />
+            <EditText
+                android:id="@+id/tx_modTelfFijo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:maxLength="9"
+                android:hint="@string/telefonofijo"
+                android:inputType="phone" />
+            <EditText
+                android:id="@+id/tx_modEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/correo"
+                android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/tx_modWebBlog"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="@string/webblog"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/tx_modfechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:maxLength="10"
+                android:hint="@string/fechanac"
+                android:inputType="date" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt_modArt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/modificarArt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_volverArtMod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="48dp"
+                    android:layout_marginRight="48dp"
+                    android:text="@string/bt_volver"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
